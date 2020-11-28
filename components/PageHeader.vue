@@ -13,7 +13,7 @@
         <v-icon class="text--secondary">refresh</v-icon>
       </v-btn>
     </div>
-  </v-layout>  
+  </v-layout>
 </template>
 
 <script>
@@ -45,7 +45,7 @@ export default {
         }
       });
       return breadcrumbs;
-    },    
+    },
   }
 };
 </script>

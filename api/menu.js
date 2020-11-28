@@ -98,20 +98,20 @@ const Menu = [
   //     {name: 'timeline', title: 'Timeline', component: 'components/timeline'},
   //   ]
   // },
-  // {
-  //   title: 'Forms & Controls',
-  //   group: 'forms',
-  //   component: 'forms',
-  //   icon: 'edit',
-  //   items: [
-  //     {name: 'basic', title: 'General', href: '/forms/basic-forms'},
-  //     {name: 'selects', title: 'Selects', badge: 'new', href: '/forms/selects'},
-  //     {name: 'selection-controls', title: 'Selection Controls', href: '/forms/selection-controls'},
-  //     {name: 'text-fields', title: 'Text Fields', href: '/forms/text-fields'},
-  //     {name: 'steppers', title: 'Steppers', href: '/forms/steppers'},
-  //     {name: 'editors', title: 'Editors', href: '/forms/editors'},
-  //   ]
-  // },
+  {
+    title: 'Forms',
+    group: 'forms',
+    component: 'forms',
+    icon: 'edit',
+    items: [
+      {name: 'basic', title: 'General', href: '/forms/basic-forms'},
+      // {name: 'selects', title: 'Selects', badge: 'new', href: '/forms/selects'},
+      // {name: 'selection-controls', title: 'Selection Controls', href: '/forms/selection-controls'},
+      // {name: 'text-fields', title: 'Text Fields', href: '/forms/text-fields'},
+      // {name: 'steppers', title: 'Steppers', href: '/forms/steppers'},
+      // {name: 'editors', title: 'Editors', href: '/forms/editors'},
+    ]
+  },
   {divider: true},
   {header: 'Extras'},
   {

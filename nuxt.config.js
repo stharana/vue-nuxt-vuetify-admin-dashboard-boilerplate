@@ -1,8 +1,5 @@
 const pkg = require('./package')
 
-
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-
 module.exports = {
   mode: 'universal',
 
@@ -41,8 +38,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/style/theme.styl',
-    '~/assets/style/app.styl',
+    // '~/assets/style/theme.styl',
+    // '~/assets/style/app.styl',
     'font-awesome/css/font-awesome.css',
     'roboto-fontface/css/roboto/roboto-fontface.css'
   ],
@@ -51,7 +48,6 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify',
     '@/plugins/vee-validate'
   ],
 
@@ -60,18 +56,15 @@ module.exports = {
   */
   modules: [],
 
+    /*
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ["@nuxtjs/vuetify"],
+
   /*
   ** Build configuration
   */
   build: {
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
-    loaders: {
-      stylus: {
-        import: ["~assets/style/variables.styl"]
-      }
-    },
-
     /*
     ** You can extend webpack config here
     */
